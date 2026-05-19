@@ -7,128 +7,171 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #FAF7F2;
-      color: #1A1A1A;
-      line-height: 1.7;
-      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d0b0f;
+      color: #e8e0d0;
+      line-height: 1.75;
+      padding: 48px 24px 80px;
     }
-    .container { max-width: 720px; margin: 0 auto; }
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      color: #7B5EA7;
-      margin-bottom: 8px;
-    }
-    .tagline {
-      font-size: 13px;
-      color: #888;
-      letter-spacing: 2px;
+    .container { max-width: 740px; margin: 0 auto; }
+    .brand {
+      text-align: center;
       margin-bottom: 48px;
+      letter-spacing: 6px;
+      color: #c9a84c;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .brand-sub {
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: #666;
+      margin-top: 4px;
     }
     h1 {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 700;
-      margin-bottom: 8px;
-      color: #1A1A1A;
+      color: #f5f0e8;
+      margin-bottom: 6px;
     }
-    .date {
+    .effective {
       font-size: 13px;
-      color: #888;
+      color: #666;
       margin-bottom: 40px;
     }
     h2 {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
-      margin-top: 36px;
-      margin-bottom: 12px;
-      color: #7B5EA7;
+      color: #c9a84c;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      margin-top: 40px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #2a2a2a;
     }
-    p { margin-bottom: 16px; font-size: 15px; color: #333; }
-    ul { margin: 0 0 16px 20px; }
-    li { font-size: 15px; color: #333; margin-bottom: 8px; }
-    a { color: #7B5EA7; text-decoration: none; }
+    p { margin-bottom: 14px; color: #c8c0b0; font-size: 15px; }
+    ul {
+      list-style: none;
+      margin: 0 0 16px 0;
+      padding: 0;
+    }
+    ul li {
+      padding: 7px 0 7px 20px;
+      position: relative;
+      color: #c8c0b0;
+      font-size: 15px;
+      border-bottom: 1px solid #1c1c1c;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #c9a84c;
+      font-size: 9px;
+      top: 10px;
+    }
+    strong { color: #f5f0e8; font-weight: 600; }
+    a { color: #c9a84c; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .divider {
-      border: none;
-      border-top: 1px solid #E8E0D5;
-      margin: 40px 0;
+    .contact-block {
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 16px;
     }
-    .footer {
-      font-size: 13px;
-      color: #888;
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #E8E0D5;
+    .contact-block p { margin: 0; }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 12px;
+      color: #444;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">HUSH</div>
-    <div class="tagline">NETWORK · EARN. TRACK. CONNECT.</div>
+
+    <div class="brand">H U S H</div>
+    <div class="brand-sub">NETWORK · EARN. TRACK. CONNECT.</div>
 
     <h1>Privacy Policy</h1>
-    <div class="date">Effective Date: April 1, 2026</div>
+    <div class="effective">Effective Date: May 19, 2026</div>
 
-    <p>HUSH Network ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the HUSH Network mobile application ("App").</p>
+    <p>HUSH Network ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the HUSH Network mobile application ("App"), including both the HUSH member experience and the HUSH Insider (client) portal.</p>
 
     <h2>1. Information We Collect</h2>
-    <p>We collect the following types of information:</p>
+    <p>We collect the following types of information depending on how you use the App:</p>
     <ul>
-      <li><strong>Name:</strong> Your display name or work name used within the App.</li>
+      <li><strong>Name:</strong> Your display name, work name, or alias used within the App.</li>
       <li><strong>Email Address:</strong> Used to create and manage your account.</li>
-      <li><strong>Financial Information:</strong> Earnings, tips, and deductions you log within the App. This data is used solely to power the App's income tracking features.</li>
-      <li><strong>Photos and Videos:</strong> Profile photos you choose to upload.</li>
-      <li><strong>Messages:</strong> Messages sent between users through the App's community features.</li>
+      <li><strong>Financial Information:</strong> Earnings, tips, tip-outs, bills, and income goals you log within the App. This data is used solely to power the App's income tracking and goal features and is never shared publicly.</li>
+      <li><strong>Payment Information:</strong> When payments are made through the App, transactions are processed by Stripe, Inc. We do not store your full card number, CVV, or banking details on our servers. Stripe handles all payment data under their own privacy policy and PCI-DSS compliance standards.</li>
+      <li><strong>Photos and Videos:</strong> Profile photos and venue photos you choose to upload within the App.</li>
+      <li><strong>Messages:</strong> Messages sent between users through the App's community and direct messaging features.</li>
+      <li><strong>Push Notification Token:</strong> A device token used to send you push notifications. You may disable notifications at any time through your device settings.</li>
       <li><strong>User ID:</strong> A unique identifier assigned to your account.</li>
-      <li><strong>Coarse Location:</strong> Approximate city-level location used to show relevant venues near you. We do not collect precise GPS coordinates.</li>
+      <li><strong>Coarse Location:</strong> Approximate city-level location used to show relevant venues near you. We do not collect precise GPS coordinates unless you explicitly grant location access.</li>
     </ul>
 
-    <h2>2. How We Use Your Information</h2>
+    <h2>2. HUSH Insiders (Client Accounts)</h2>
+    <p>HUSH Insiders are clients who create accounts to connect with HUSH members. The same data collection practices described in this policy apply to Insider accounts. Insiders may provide a display name, username, email address, profile photo, and city. Insiders can send connection requests, exchange messages, and make payments to members — all within the App. Member approval is required before any connection is established.</p>
+
+    <h2>3. How We Use Your Information</h2>
     <p>All information collected is used exclusively for App functionality, including:</p>
     <ul>
       <li>Creating and authenticating your account</li>
-      <li>Enabling earnings and shift tracking features</li>
-      <li>Showing venues relevant to your location</li>
-      <li>Enabling community messaging and connection features</li>
-      <li>Displaying your profile within the App</li>
+      <li>Enabling earnings, shift tracking, and goal features</li>
+      <li>Processing payments between Insiders and members via Stripe</li>
+      <li>Sending push notifications relevant to your account activity</li>
+      <li>Showing venues and community members relevant to your location</li>
+      <li>Enabling private messaging and connection features between members and Insiders</li>
+      <li>Displaying your profile within the App to approved connections</li>
     </ul>
     <p>We do not use your data for advertising, third-party marketing, or to build advertising profiles.</p>
 
-    <h2>3. Data Sharing</h2>
-    <p>We do not sell, rent, or share your personal information with third parties for advertising purposes. We use Supabase as our backend infrastructure provider for secure data storage and authentication. Your data is never shared with advertisers or data brokers.</p>
+    <h2>4. Data Sharing</h2>
+    <p>We do not sell, rent, or share your personal information with third parties for advertising purposes. We work with the following service providers solely to operate the App:</p>
+    <ul>
+      <li><strong>Supabase:</strong> Backend infrastructure for secure data storage and user authentication.</li>
+      <li><strong>Stripe, Inc.:</strong> Payment processing for in-app transactions between Insiders and members. Stripe is PCI-DSS compliant. We never store full payment card details on our servers. View Stripe's privacy policy at <a href="https://stripe.com/privacy" target="_blank">stripe.com/privacy</a>.</li>
+      <li><strong>Apple (APNs):</strong> Push notification delivery through Apple's Push Notification service.</li>
+    </ul>
+    <p>Your data is never shared with advertisers, data brokers, or any other third parties beyond those listed above.</p>
 
-    <h2>4. Data Storage and Security</h2>
-    <p>Your account data is stored securely using Supabase, which employs industry-standard encryption and security measures. Some data (such as client contact lists and appointment details) is stored locally on your device and is never transmitted to our servers.</p>
+    <h2>5. Data Storage and Security</h2>
+    <p>Your account data is stored securely using Supabase, which employs industry-standard encryption and security measures. Financial data you log is private by default and is never visible to other users. Your earnings, tips, bills, and goals are yours alone.</p>
 
-    <h2>5. Your Choices and Rights</h2>
+    <h2>6. Your Choices and Rights</h2>
     <p>You have the right to:</p>
     <ul>
       <li>Access the personal information we hold about you</li>
       <li>Request correction of inaccurate data</li>
-      <li>Request deletion of your account and associated data</li>
+      <li>Request deletion of your account and all associated data</li>
       <li>Withdraw location permissions at any time through your device settings</li>
+      <li>Disable push notifications at any time through your device settings</li>
     </ul>
     <p>To exercise any of these rights, please contact us at the email address below.</p>
 
-    <h2>6. Children's Privacy</h2>
+    <h2>7. Children's Privacy</h2>
     <p>HUSH Network is intended for users 18 years of age and older. We do not knowingly collect information from anyone under 18. If we become aware that a minor has created an account, we will promptly delete their information.</p>
 
-    <h2>7. Changes to This Policy</h2>
+    <h2>8. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this page. Continued use of the App after any changes constitutes your acceptance of the updated policy.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p><strong>HUSH Network</strong><br />
-    <a href="mailto:katherineredford90@gmail.com">katherineredford90@gmail.com</a></p>
-
-    <div class="footer">
-      &copy; 2026 HUSH Network. All rights reserved.
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+    <div class="contact-block">
+      <p><strong>HUSH Network</strong><br />
+      <a href="mailto:katherineredford90@gmail.com">katherineredford90@gmail.com</a></p>
     </div>
+
+    <footer>© 2026 HUSH Network. All rights reserved.</footer>
+
   </div>
 </body>
 </html>
